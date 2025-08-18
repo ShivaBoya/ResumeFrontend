@@ -18,6 +18,7 @@ import Premium from "./pages/Primium"; // added Premium page
 import HomeBeforeLogin from "./pages/HomeBeforeLogin";
 import HomeAfterLogin from "./pages/AfterLoginHome";
 import AI from "./pages/Ai"; // AI Assistant page
+import Templates from "./pages/Template";
 //import Features from "./pages/Features";
 
 // Protected route wrapper component
@@ -100,6 +101,14 @@ function App() {
             element={
               <PrivateRoute>
                 <AI />
+              </PrivateRoute>
+            }
+          />
+           <Route
+            path="/templates"
+            element={
+              <PrivateRoute>
+                <Templates/>
               </PrivateRoute>
             }
           />
